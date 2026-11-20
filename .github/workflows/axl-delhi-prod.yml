@@ -106,7 +106,9 @@ jobs:
         run: npm run build
 
       - name: Deploy to S3 Bucket
-        run: aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET_NAME }}/all-app/
+        run: |
+          aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET_NAME }}/all-app/ --delete --exclude index.html
+          aws s3 cp ./build/index.html s3://${{ secrets.AWS_S3_BUCKET_NAME }}/all-app/index.html --cache-control "no-cache, no-store, must-revalidate" --content-type "text/html"
 
       - name: Debug Environment Variables
         run: |
