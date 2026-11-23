@@ -2229,6 +2229,8 @@ const Practice = () => {
           practiceStepName: practiceSteps?.[currentPracticeStep]?.name,
         });
 
+        // Why the backend failed this set (fluency/prosody can fail it even at 100%)
+        let sessionFailReason = null;
         if (shouldShowFeedback) {
           console.log("handleNext - Entering feedback logic for:", {
             currentLevel,
@@ -2253,7 +2255,29 @@ const Practice = () => {
 
           const data = JSON.stringify(getSetData);
           Log(data, "practice", "ET");
-          setPercentage(getSetData?.percentage);
+          // Nothing was recognised in this set (no recordings, or speech-to-text
+          // returned empty for every clip). Older backends still report 100 here,
+          // which showed "100/100" next to TRY AGAIN; show 0 instead.
+          const nothingHeard =
+            getSetData?.sessionResult !== "pass" &&
+            (getSetData?.failReason === "no_records" ||
+              (!getSetData?.failReason &&
+                getSetData?.totalSyllables === 0 &&
+                getSetData?.percentage === 100));
+          setPercentage(nothingHeard ? 0 : getSetData?.percentage);
+          // failReason comes from newer backends; older ones only send
+          // fluencyResult/prosodyResult, so derive it from those as a fallback.
+          sessionFailReason =
+            getSetData?.sessionResult === "pass"
+              ? null
+              : nothingHeard
+              ? "no_records"
+              : getSetData?.failReason ||
+                (getSetData?.fluencyResult === "fail"
+                  ? "fluency"
+                  : getSetData?.prosodyResult === "fail"
+                  ? "prosody"
+                  : null);
           checkFluency(currentContentType, getSetData?.fluency);
           if (process.env.REACT_APP_POST_LEARNER_PROGRESS === "true") {
             await createLearnerProgress(
@@ -2411,7 +2435,7 @@ const Practice = () => {
         }
 
         if (newPracticeStep === 0 || newPracticeStep === 5 || isGameOver) {
-          gameOver();
+          gameOver({ failReason: sessionFailReason });
           return;
         }
 

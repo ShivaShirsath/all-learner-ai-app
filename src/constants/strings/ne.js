@@ -166,6 +166,12 @@ const ne = {
   // Main layout / game results
   MAIN_LAYOUT_READY_CHALLENGE: "चुनौतीका लागि तयार?",
   MAIN_LAYOUT_GAMEOVER_GOOD_TRY_SPEED: "राम्रो प्रयास! थप गति चाहिन्छ।",
+  MAIN_LAYOUT_GAMEOVER_READ_SMOOTHLY:
+    "तपाईंले शब्दहरू सही पढ्नुभयो! अब धेरै नरोकिई अलि सहज रूपमा पढ्नुहोस्।",
+  MAIN_LAYOUT_GAMEOVER_READ_CLEARLY:
+    "तपाईंले शब्दहरू सही पढ्नुभयो! अब बोलेजस्तै स्पष्ट स्वरमा पढ्नुहोस्।",
+  MAIN_LAYOUT_GAMEOVER_NOT_HEARD:
+    "हामीले तपाईंको पढाइ सुन्न सकेनौं। माइक्रोफोन नजिक ठूलो र स्पष्ट स्वरमा पढेर फेरि प्रयास गर्नुहोस्।",
   MAIN_LAYOUT_GAMEOVER_NEED_POINTS:
     "ओहो! पास हुन तपाईंलाई थप {points} अंक चाहिन्छ। तपाईं झन्डै पुग्नुभयो—फेरि प्रयास गर्नुहोस्!",
   MAIN_LAYOUT_NEXT_LESSON: "अर्को पाठ",

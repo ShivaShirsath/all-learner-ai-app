@@ -152,6 +152,12 @@ const hi = {
   // Main layout / game results
   MAIN_LAYOUT_READY_CHALLENGE: "चैलेंज के लिए तैयार हैं?",
   MAIN_LAYOUT_GAMEOVER_GOOD_TRY_SPEED: "अच्छा प्रयास! और स्पीड चाहिए।",
+  MAIN_LAYOUT_GAMEOVER_READ_SMOOTHLY:
+    "आपने शब्द सही पढ़े! अब बिना ज़्यादा रुके थोड़ा सहज होकर पढ़िए।",
+  MAIN_LAYOUT_GAMEOVER_READ_CLEARLY:
+    "आपने शब्द सही पढ़े! अब बात करने की तरह साफ़ आवाज़ में पढ़िए।",
+  MAIN_LAYOUT_GAMEOVER_NOT_HEARD:
+    "हमें आपका पढ़ना सुनाई नहीं दिया। माइक्रोफ़ोन के पास ज़ोर से और साफ़ पढ़कर फिर से कोशिश करें।",
   MAIN_LAYOUT_GAMEOVER_NEED_POINTS:
     "उफ़! आपको {points} पास होने के लिए और पॉइंट चाहिए। आप लगभग पहुँच ही गए हैं—फिर से कोशिश करें!",
   MAIN_LAYOUT_NEXT_LESSON: "अगला पाठ",

@@ -160,6 +160,12 @@ const kn = {
   // Main layout / game results
   MAIN_LAYOUT_READY_CHALLENGE: "ಸವಾಲಿಗೆ ಸಿದ್ಧರಿದ್ದೀರಾ?",
   MAIN_LAYOUT_GAMEOVER_GOOD_TRY_SPEED: "ಉತ್ತಮ ಪ್ರಯತ್ನ! ಹೆಚ್ಚಿನ ವೇಗ ಬೇಕು.",
+  MAIN_LAYOUT_GAMEOVER_READ_SMOOTHLY:
+    "ನೀವು ಪದಗಳನ್ನು ಸರಿಯಾಗಿ ಓದಿದ್ದೀರಿ! ಈಗ ನಿಲ್ಲಿಸದೆ ಸ್ವಲ್ಪ ಸರಾಗವಾಗಿ ಓದಿ.",
+  MAIN_LAYOUT_GAMEOVER_READ_CLEARLY:
+    "ನೀವು ಪದಗಳನ್ನು ಸರಿಯಾಗಿ ಓದಿದ್ದೀರಿ! ಈಗ ಮಾತನಾಡುವಂತೆ ಸ್ಪಷ್ಟವಾಗಿ ಓದಿ.",
+  MAIN_LAYOUT_GAMEOVER_NOT_HEARD:
+    "ನೀವು ಓದಿದ್ದು ನಮಗೆ ಕೇಳಿಸಲಿಲ್ಲ. ಮೈಕ್ರೋಫೋನ್ ಹತ್ತಿರ ಜೋರಾಗಿ, ಸ್ಪಷ್ಟವಾಗಿ ಓದಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
   MAIN_LAYOUT_NEXT_LESSON: "ಮುಂದಿನ ಪಾಠ",
   MAIN_LAYOUT_OOPS_SLOW: "ಅಯ್ಯೋ, ಸ್ವಲ್ಪ ನಿಧಾನ!",
   MAIN_LAYOUT_PRACTICE_MORE: "ಇನ್ನಷ್ಟು ಅಭ್ಯಾಸ ಮಾಡೋಣ",

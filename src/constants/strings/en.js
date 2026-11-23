@@ -158,6 +158,12 @@ const en = {
   // Main layout / game results
   MAIN_LAYOUT_READY_CHALLENGE: "Ready for Challenge?",
   MAIN_LAYOUT_GAMEOVER_GOOD_TRY_SPEED: "Good try! Need more speed.",
+  MAIN_LAYOUT_GAMEOVER_READ_SMOOTHLY:
+    "You read the words correctly! Now try reading a little more smoothly, without long pauses.",
+  MAIN_LAYOUT_GAMEOVER_READ_CLEARLY:
+    "You read the words correctly! Now read aloud clearly, just like you talk.",
+  MAIN_LAYOUT_GAMEOVER_NOT_HEARD:
+    "We couldn't hear your reading. Please read aloud clearly, close to the microphone, and try again.",
   MAIN_LAYOUT_GAMEOVER_NEED_POINTS:
     "Oops! You need {points} more points to pass. You're almost there—try again!",
   MAIN_LAYOUT_NEXT_LESSON: "Next Lesson",

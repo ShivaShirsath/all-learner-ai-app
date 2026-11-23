@@ -1970,18 +1970,20 @@ const MainLayout = (props) => {
                                 )}
                                 <br />
 
-                                {!fluency ? (
-                                  <Typography textAlign="center" sx={{ mt: 2 }}>
-                                    {ui.MAIN_LAYOUT_GAMEOVER_GOOD_TRY_SPEED}
-                                  </Typography>
-                                ) : (
-                                  <Typography textAlign="center" sx={{ mt: 2 }}>
-                                    {ui.MAIN_LAYOUT_GAMEOVER_NEED_POINTS.replace(
-                                      "{points}",
-                                      Math.abs(70 - percentage)
-                                    )}
-                                  </Typography>
-                                )}
+                                <Typography textAlign="center" sx={{ mt: 2 }}>
+                                  {gameOverData?.failReason === "no_records"
+                                    ? ui.MAIN_LAYOUT_GAMEOVER_NOT_HEARD
+                                    : gameOverData?.failReason === "fluency"
+                                    ? ui.MAIN_LAYOUT_GAMEOVER_READ_SMOOTHLY
+                                    : gameOverData?.failReason === "prosody"
+                                    ? ui.MAIN_LAYOUT_GAMEOVER_READ_CLEARLY
+                                    : !fluency || 70 - percentage <= 0
+                                    ? ui.MAIN_LAYOUT_GAMEOVER_GOOD_TRY_SPEED
+                                    : ui.MAIN_LAYOUT_GAMEOVER_NEED_POINTS.replace(
+                                        "{points}",
+                                        70 - percentage
+                                      )}
+                                </Typography>
                               </Typography>
                               {(props.pageName === "wordsorimage" ||
                                 props.pageName === "m5") &&

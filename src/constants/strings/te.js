@@ -156,6 +156,12 @@ const te = {
     "అయ్యో! పాస్ అవ్వడానికి మీకు {points} పాయింట్లు కావాలి. మీరు దాదాపుగా చేరుకున్నారు—మళ్ళీ ప్రయత్నించండి!",
   MAIN_LAYOUT_READY_CHALLENGE: "సవాలుకు సిద్ధమేనా?",
   MAIN_LAYOUT_GAMEOVER_GOOD_TRY_SPEED: "మంచి ప్రయత్నం! మరింత వేగం కావాలి.",
+  MAIN_LAYOUT_GAMEOVER_READ_SMOOTHLY:
+    "మీరు పదాలను సరిగ్గా చదివారు! ఇప్పుడు ఆగకుండా కొంచెం సాఫీగా చదవండి.",
+  MAIN_LAYOUT_GAMEOVER_READ_CLEARLY:
+    "మీరు పదాలను సరిగ్గా చదివారు! ఇప్పుడు మాట్లాడుతున్నట్లుగా స్పష్టంగా చదవండి.",
+  MAIN_LAYOUT_GAMEOVER_NOT_HEARD:
+    "మీరు చదివింది మాకు వినిపించలేదు. మైక్రోఫోన్ దగ్గరగా ఉండి గట్టిగా, స్పష్టంగా చదివి మళ్ళీ ప్రయత్నించండి.",
   MAIN_LAYOUT_NEXT_LESSON: "తదుపరి పాఠం",
   MAIN_LAYOUT_OOPS_SLOW: "అయ్యో, కొంచెం నెమ్మదిగా!",
   MAIN_LAYOUT_PRACTICE_MORE: "మళ్ళీ సాధన చేద్దాం",
